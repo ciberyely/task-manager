@@ -9,9 +9,10 @@ function add() {
     status = "pendiente";
 
   if (name === "" || description === "") {
-    showMessage("Please Insert data in all fields", "danger");
+    ui.showMessage("Please Insert data in all fields", "danger");
     return
   }
+
   const objeto = {
     name,
     description,
@@ -27,7 +28,7 @@ function add() {
 function remove(index) {
   tasks.splice(index, 1);
   listTasks(tasks);
-  ui.showMessage("Task DeketeRemove of List Succsssfully", "danger");
+  ui.showMessage("Task Remove of List Succsssfully", "danger");
 }
 
 function finish(index) {
