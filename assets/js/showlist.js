@@ -49,7 +49,7 @@ function listTasks(tasks) {
 
         table.appendChild(fila);
     })
-    console.log(table);
+    //console.log(table);
 }
 
 export { listTasks }
